@@ -1,4 +1,4 @@
-# xylophone
+# Xylophone
 
 A simple musical instrument app
 
