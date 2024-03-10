@@ -1,3 +1,17 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        // Asegúrate de que estés usando una versión compatible del complemento Kotlin Gradle
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.20"
+        // Otra dependencia necesaria para tu proyecto de Android
+        //noinspection GradlePluginVersion
+        classpath 'com.android.tools.build:gradle:4.1.0'
+    }
+}
+
 allprojects {
     repositories {
         google()
@@ -16,3 +30,4 @@ subprojects {
 tasks.register("clean", Delete) {
     delete rootProject.buildDir
 }
+
